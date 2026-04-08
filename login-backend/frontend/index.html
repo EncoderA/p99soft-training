@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="card">
+
+    <div id="loginForm">
+      <h2>Login</h2>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="ankush" />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="ankush@123" />
+
+      <button onclick="doLogin()">Sign In</button>
+
+      <div id="msg"></div>
+      <pre id="result"></pre>
+    </div>
+
+    <div id="loggedIn">
+      <h2>Logged In</h2>
+      <p>Welcome, <strong id="displayName"></strong>!</p>
+      <div>You are logged successfully</div>
+      <button class="logout" onclick="doLogout()">Logout</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
