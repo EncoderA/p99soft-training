@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+  width: 100px;
+  height: 100px;
+  background: coral;
+  margin: 10px;
+  transition: transform 0.5s;
+}
+</style>
+</head>
+
+<body>
+
+<div id="mainBox" class="box"></div>
+<button id="run-all">Run All</button>
+
+<script>
+function runAll() {
+  // By ID
+  debugger;
+  let el = document.getElementById("mainBox");
+
+  // Change HTML
+  el.innerHTML = "Hi!";
+
+  // Change CSS
+  el.style.backgroundColor = "purple";
+
+  // Animation
+  el.style.transform = "translateX(200px) rotate(45deg)";
+
+  // Document reference
+  console.log(document.title);
+
+  //adding-event listned
+
+}
+let runAllButton=document.getElementById("run-all");
+runAllButton.addEventListener('click',(event)=>{
+console.trace()
+runAll()
+})
+</script>
+
+</body>
+</html>
